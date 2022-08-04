@@ -1,0 +1,33 @@
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200vw;
+    height: 200vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-200px, -600px);
+    pointer-events: none;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal-container.hop {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+.modal {
+    background-color: #fff;
+    text-align: center;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    z-index: 10;
+}
